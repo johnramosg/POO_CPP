@@ -7,6 +7,5 @@ class mascota{
   public:
   mascota();
   void saluda();
-  
 
 };
