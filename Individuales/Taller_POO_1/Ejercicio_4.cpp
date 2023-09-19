@@ -1,8 +1,8 @@
 /*
 Autor: John Jaider Ramos Gaviria
 Correo: ramos.john@correounivalle.edu.co
-Fecha creación: 2023-09-12
-Fecha última modificación: 2023-09-12
+Fecha creaciÃ³n: 2023-09-18
+Fecha Ãºltima modificaciÃ³n: 2023-09-19
 */
 
 #include<iostream>
