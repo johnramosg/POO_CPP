@@ -1,0 +1,58 @@
+----------------------------------------------------------------------------
+Referencia => Alias de nombres de variables de objetos
+No crean nuevas variables ... Asignan varios nombres a las mismas variables
+----------------------------------------------------------------------------
+EJEMPLO:
+{
+  int valor= 5;
+  int &meses = valor; //Meses es un nuevo nombre para valor
+  cout << valor; //Imprime 5
+  cout << meses; //Imprime 5
+  meses++;
+  cout << valor; //Imprime 6
+}
+----------------------------------------------------------------------------
+Las referencias se declaran con un ampersand &
+----------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+LOGICA BOOLEANA
+&& => and
+|| => or
+!b => not b
+----------------------------------------------------------------------------
+PUNTEROS
+----------------------------------------------------------------------------
+Declarar un Puntero
+int *p // p es un puntero (direccion) que apunta a un entero
+----------------------------------------------------------------------------
+int salario = 23;
+int *pagar; //pagar es un puntero que apunta a enteros
+pagar = &salario; //hemos amarrado pagar a salario
+cout << *pagar; //Imprime 23
+(*pagar)++;
+cout << *pagar; //Imprime 24
+//TAMBIEN SE PUEDE DECLARAR Y AMARRAR A LA VEX
+int *pagar = &salario
+-----------------------------------------------------------------------------
+UN PUNTERO PUEDE APUNTAR A OTRO PUNTERO
+double valor = 3.2
+double *p = &valor;
+double **q = &p;
+(**q) = (**q)*2;
+cout << valor; //Imprimira 6.4
+
+-----------------------------------------------------------------------------
+CON UN PUNTERO SE PUEDE ACCEDER A UN OBJETO
+#include "Biicleta.h"
+Bicicleta miBici("roja",6,3) //Color, piñones, ciclones
+Bicicleta *laBici = &miBici;
+miBici.pedalear(10) //Km
+(*laBici).pedalear(10) //Km
+
+//Y HAY OTRA FORMA SINTACTICA DE HACER LO MISMO
+laBici->pedalear(10);
+-----------------------------------------------------------------------------
+ENLAZAR UN PUNTERO A NADA => nullptr
+doube valor = 3.2
+double *p = nullptr

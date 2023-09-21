@@ -1,0 +1,86 @@
+VER GRABACION MINUTO 36 POR AHI : PRIVATE NO PUEDE
+----------------------------------------------------------------------
+PASO DE ARGUMENTOS A FUNCIONES
+----------------------------------------------------------------------
+Semantica posible de las funciones:
+=> De Entrada: los datos entran  a la funcion, pero no salen, aunque la funcion los modifique
+=> De Salida: los resultados salen de la funcion
+=> De entrada-salida: Los datos entran a la funcion, la funcion los modifica, y estos salen de la funcion
+----------------------------------------------------------------------
+Para lograrlo en c++ existen varias sintaxis que lo permite:
+=> Paso por valor (UNA VARIABLE)
+=> Paso por referencia (SE USA LA REFERENCIA)
+=> Paso por puntero (SE USA PUNTEROS)
+
+=> Paso por referencia constante
+=> Paso por puntero constante
+
+=> Retorno (return) de valor
+----------------------------------------------------------------------
+Resumen
+=> Entrada :
+              Paso por valor
+              Paso por referencia constante
+              Paso por puntero constante
+
+=> Salida :
+              Retorno (return ) por valor
+
+=> Entrada salida:
+              Paso por referencia
+              Paso por puntero
+----------------------------------------------------------------------
+USO DEL CONST
+=> Constantes son variables que nuncan cambian
+Ejemplo de declaración:
+  const int numero = 7
+  const Bicicleta miBici("roja",6,3)
+  const double pi = 3.1416
+
+=> En los OBJETOS CONSTANTES solo se pued usar FUNCIONES CONSTANES, es decir que no cambien ningun atributo de la parte privada
+----------------------------------------------------------------------
+EXPLICACION
+
+=> Entrada : Por valor
+  Libro libro
+  prestar(libro)
+
+  void prestar(Libro unLibro){
+  }
+
+=> Entrada : Por referencia constante
+  Libro libro;
+  prestar(libro);
+
+  void prestar(const Libro &unLibro){
+  }
+
+=> Entrada : Por puntero constante
+  Libro libro;
+  prestar(&libro);
+
+  void prestar(const Libro *unLibro){
+  }
+
+=> Salida : Por valor
+  int valor = calcular();
+
+  int calcular(){
+    /*.........*/
+    return resultado;
+  }
+
+=> Entrada-Salida : Por referencia
+  Libro libro;
+  prestar(libro);
+
+  void prestar(Libro &unLibro){
+  }
+
+=> Entrada-Salida : Por puntero
+  Libro libro;
+  prestar(&libro);
+
+  void prestar(Libro *unLibro){
+  }
+----------------------------------------------------------------------

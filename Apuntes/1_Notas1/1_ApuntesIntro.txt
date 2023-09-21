@@ -1,0 +1,129 @@
+-
+LOS TIPOS PRIMITIVOS QUE EXISTEN EN C++ SON:
+– int para números enteros
+– double para números reales
+– bool para valores lógicos: true y false. En realidad, el false se
+representa como 0 y el true como cualquier otro número.
+– void para funciones que no retornan nada.
+– string para secuencias de letras (mensajes de texto).
+--
+-----------------------------------------------------------------
+si un bloque solo tiene una sentencia, no son necesarias las llaves
+if(ahorros > 20000)
+  cout << "Puedo comprar un carro nuevo" << endl;
+-----------------------------------------------------------------
+UTIL:
+- const para usar constantes
+-----------------------------------------------------------------
+TIPOS E DATOS QUE NO DEBERIAS USAR:
+char, float, unsigned, long, short, volatile
+-----------------------------------------------------------------
+VARIABLES:
+tipo nombre = dato;
+=> Pueden cambiar el dato que guardan pero no pueden cambiar ni el nombre ni el tipo
+-----------------------------------------------------------------
+CONVERSIONES ENTRE TIPOS
+=> Entero a String : to_string(nombre_variable)
+=> String a Entero : stoi(nombre_variable)
+=> double a String : to_string(nombre_variable)
+=> String a double : stod(nombre_variable)
+-----------------------------------------------------------------
+QUE PUEDES HACER CON LAS VARIABLES INT Y DOUBLE:
+=> Operaciones aritmeticas y de comparacion
+-----------------------------------------------------------------
+Con el int puedes sacar el  residuo  de la division %
+-----------------------------------------------------------------
+Con las variables de tipo string solo se puede hacer
++ que significa concatenar
+-----------------------------------------------------------------
+ARRAYS DE UNA DIMENSION - MATRICES 1D - VECTORES - ARREGLOS
+int valores[500]; // valores es un array de 500 enteros
+double notas[4] = {2.7, 4.8, 5.0, 4,1}; // notas es un array de 4 doubles
+-----------------------------------------------------------------
+CONDICIONALES
+-----------------------------------------------------------------
+if(condicion)
+{
+}
+else
+{
+}
+-----------------------------------------------------------------
+Los operadores booleanos que se suelen usar son : and, or y not
+-----------------------------------------------------------------
+SWITCH
+switch(entero)
+{
+  case 0:
+  // Este código se ejecuta si la variable entero vale 0
+  break;
+  case 1:
+  // Este código se ejecuta si la variable entero vale 1
+  break;
+  // Etc…
+  default:
+  // Este código se ejecuta en los demás casos no contemplados antes
+}
+-----------------------------------------------------------------
+WHILE
+=> Repite un bloque de sentencias mientras se cumpla la condición dada
+while(condicion)
+{
+}
+-----------------------------------------------------------------
+FOR
+=> sentencia1 es el caso inicial (generalmente declaras la variable y le das el valor inicial)
+=> condicion es el caso para qe se ejecute el for(gnrlm darle un valor logico a la sentencia 1)
+=> sentencia gnrlm es lo que se hara con sentencia uno para que avance el for
+for(sentencia1; condicion; sentencia2)
+{
+}
+-----------------------------------------------------------------
+for(int i = valor inicial; i <= valor final; i = i  + paso)
+{
+    Bloque de Instrucciones....
+}
+-----------------------------------------------------------------
+DO-WHILE
+=>Es similar al while, pero la condición se chequea al final en vez de al principio. Es decir que se ejecuta POR LO MENOS UNA vez
+
+do
+{
+}
+while(condicion);
+-----------------------------------------------------------------
+break sirve para salir del bucle en el que este
+-----------------------------------------------------------------
+ENTRADAS - SALIDAS
+cin => teclado
+cout => pantalla
+cerr => pantalla para mensajes de error
+
+Para que funciones debes incluir:
+#include<iostream>
+using namespace std;
+-----------------------------------------------------------------
+cout << "Voy a comprar un " << itemAComprar << " que vale " << valor << "USD" << endl;
+-----------------------------------------------------------------
+puedes usar endl - "\n" - "\t"
+-----------------------------------------------------------------
+Para leer es mejor leer siempre strings y luego convertirlos al dato
+correcto.
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+  int edad;
+  string auxiliar;
+  cout << "¿Cuál es tu edad? ";
+  getline(cin, auxiliar);
+  edad = stoi(auxiliar); => Convierte string a int. También existe stod para
+  convertir string a double
+
+void leerDatoEntero(int variable,mensaje){
+  string aux;
+  cout << mensaje ;
+  getline(cin, aux);
+  variable = stoi(mensaje);
+}

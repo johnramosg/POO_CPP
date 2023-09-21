@@ -1,0 +1,60 @@
+/*
+
+
+──────▄▀▄─────▄▀▄             (っ◔◡◔)っ ♥ 𝕮𝖆𝖗𝖑𝖔𝖘 𝕳𝖊𝖗𝖓𝖆𝖓𝖉𝖊𝖟♥
+─────▄█░░▀▀▀▀▀░░█▄                      ➋➊➋➎➏➎➌
+─▄▄──█░░░░░░░░░░░█──▄▄              ♜♜♛♛♞♞☯☯☬☬☠☠✟✟
+█▄▄█─█░░▀░░┬░░▀░░█─█▄    carlos.hernandez.agudelo@correunivalle.edu.co
+
+
+*/
+
+#include <iostream>
+#include <stdlib.h>
+#include <string>
+using namespace std;
+
+
+int main(){
+  string aux;
+  double a,b,operacion;
+  int c;
+  cout << "Estas son las opciones, digite la que quiere realizar: \n1.Suma \n2.Resta \n3.Multiplicacion \n4.Division \nOpcion a elegir: ";
+  getline(cin, aux);
+  c = stoi(aux);
+  while (true)
+  {
+    if (c >= 1 and c <= 4)
+    {
+      break;
+    }
+    else
+    {
+      cout << "Dato invalido";
+      cout << "Estas son las opciones, digite la que quiere realizar: \n1.Suma \n2.Resta \n3.Multiplicacion \n4.Division \nOpcion a elegir: ";
+      cin >> c;
+    }
+  };
+  cout << "Escriba un numero: ";
+  getline(cin, aux);
+  a = stod(aux);
+  cout << "Escriba otro numero: ";
+  getline(cin, aux);
+  b = stod(aux);
+  if(c==1){
+    operacion = a+b;
+    cout << a <<"+"<<b<<"="<<operacion <<endl;
+  }else if(c==2){
+    operacion = a - b;
+    cout << a << "-" << b << "=" << operacion << endl;
+  }else if(c==3){
+    operacion = a * b;
+    cout << a << "*" << b << "=" << operacion << endl;
+  }else if(c==4){
+    operacion = a / b;
+    cout << a << "/" << b << "=" << operacion << endl;
+  }else{
+    cout << "Hubo algun error." << endl;
+  }
+}
+//

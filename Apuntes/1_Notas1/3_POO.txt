@@ -1,0 +1,79 @@
+------------------------------------------------------------------
+Un objeto se caracteriza por :
+=> Nombre
+=> Atributos : estado interno del objeto(variables, datos)
+=> Funciones / metodo: permite cambiar el estado interno
+------------------------------------------------------------------
+OBJETO: Bombillo
+Atributos => estaPrendido : false
+funcionalidades =>
+  prender()
+  apagar()
+◉
+------------------------------------------------------------------
+⊛ Los nombres suelen ser objetos, atributos o datos
+⊛ Los verbos suelen ser funcionalidades (acciones)
+------------------------------------------------------------------
+◉ En los archivos .h tu declaras las clase
+------------------------------------------------------------------
+⊛Todos los objetos similares son de la misma clase.
+⊛ Primero se define la clase , luego los objets.
+⊛ Los objetos son instancias de una clase
+------------------------------------------------------------------
+Encapsultamiento: Consiste en que una clase tiene dos partes:
+◉ Privada : Se usa con datos, estos pueden ser otros objetos  numeros o textos. [SOLO USA DENTRO DEL MISMO OBJETO, SOLO ESE OBJETO PUEDE MODIFICARLO, AQUI VAN LOS DATOS]
+◉ Publicas : usa con funciones que pueden leer y modificar esos datos. [LA PUEDE VER EN CUALQUIER LUGAR, AQUI VAN LAS FUNCIONES]
+◉ Protegido: []
+Visibilidad Funciones: public, private, protected
+------------------------------------------------------------------
+------------------------------------------------------------------
+IDEAS BASICAS DE POO
+
+⊛ Una clase es una abstracción del mundo, agrupando seres o cosas con caracteristicas similares en grupos = clases.
+
+⊛ Objeto: este se deriva de na clase y tiene atributos (caracteristicas) y metodos (acciones)
+
+⊛ Abstraccion : Proceso mental de extraccióm de caracteristicas escenciales de algo.
+
+⊛ Encapsulamiento: Proceso por el que se ocultan los detalles del soporte de las caracteristicas de una abstracción. Encapsular para que tu no cojas o no veas lo de adentro.
+
+⊛ Herencia: Una clase nueva se crea apartir de una clase ya existente, herendando todos sus atributos y metodos
+
+=> Super Clase || Clase Padre
+=> Sub Clase || Clase Hija
+
+⊛ Polimorfismo: Cualidad que poseen los objetos para responder de distinto modo a un mismo mensaje.
+
+------------------------------------------------------------------
+Refactorizar : Sacar versiones de mejor calidad (aunque hagan lo mismo)
+Refinar: Añadir nuevas funcionalidades para acercarnos al comportamiento deseado
+------------------------------------------------------------------
+Se busca:
+◉ Elegancia
+◉ Eficiencia
+◉ Entendimiento
+◉ Extensibilidad
+------------------------------------------------------------------
+Se puede construir objetos estaticos:
+=> nombreClase nombre(parametros);
+
+Se puede crear los objetos dinamicos con el operador <new>
+=> Para salirse del espacio de memoria del compilador
+=> Es diferente el constructor y destructor
+=> nombreClase *nombre = new nombreClase(parametros)
+--------------------------------------------------------------
+FORMA DE HACER UN CONSTRUCTOR
+
+Persona::Persona(string nombre){
+  this->nombre = nombre;
+  this->bicileta = 0
+}
+--------------------------------------------------------------
+FORMA DE HACER UNA FUNCION DE nombreClase
+
+Persona::comprar(bicicleta miBicicleta){
+  this->bicicleta = miBicicleta
+}
+------------------------------------------------------------------
+------------------------------------------------------------------
+------------------------------------------------------------------

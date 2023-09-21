@@ -1,0 +1,13 @@
+PROYECTO CONCHA DE SU MAREEEE
+---------------------------------------------------------------------------
+El robot debe pasar hasta la otra orilla a;
+zorro
+conejo
+lechuga
+
+=>Solo uno se puede subir a la barca
+=> No se puede dejar el zorro con el conejo
+=> No se puede dejar el conejo con la lechuga
+
+----------------------------------------------------------------------------
+conoce => herencia

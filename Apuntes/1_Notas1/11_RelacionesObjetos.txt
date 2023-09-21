@@ -1,0 +1,10 @@
+------------------------------------------------------------------------------
+CONTIENE => Un objeto contiene a otro en su parte private
+CONOCE => Se logra con un puntero que apunte al objeto conocido
+ES => Herencia
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+CONTIENE => Paso por referencia o por argumento
+CONOCE => Punteros o referencias
+ES => Herencia o Polimorfismo
+------------------------------------------------------------------------------

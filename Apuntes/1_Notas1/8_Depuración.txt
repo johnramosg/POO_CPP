@@ -1,0 +1,14 @@
+-----------------------------------------------------------------------
+La forma mas sencilla es imprimir las variables donde pienses que hay un problema con ¨cerr¨
+{
+  int diaDelMes = 31;
+  cerr << "La variable " << diaDelMes << endl;
+}
+-----------------------------------------------------------------------
+Memory leaks o problemas como inicializar variables sin utilizar se hace así:
+{
+  valgrind --tool=memcheck --leak-check=full ./main
+}
+VER COMO USAR VALGRIND
+
+

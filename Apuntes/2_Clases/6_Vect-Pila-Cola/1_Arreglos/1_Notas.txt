@@ -1,0 +1,5 @@
+DEFINIR UN VECTOR
+
+=> tipo nombre [tamaño]
+=> tipo nombre[] = {par1,par2,...,parn}
+

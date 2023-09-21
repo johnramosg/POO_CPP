@@ -1,0 +1,100 @@
+---------------------------------------------------------------
+INCLUIR PILAS EN ++
+#include<stack>
+https://en.cppreference.com/w/cpp/container
+--------------------------------------------------------------
+ENCONTRAR TODOS ESTOS INCLUDES
+
+--------------------------------------------------------------
+Algunas clases de la STL (Standard Template Library)
+-> Vector
+-> List
+--------------------------------------------------------------
+Un vector es dinamico, un array no, encuanto a su tamaño, por ende es mejor
+Utilizar un vector:
+
+#include<vector>
+#include<iostream>
+using namespace std;
+
+vector <int> x                  // x es un vector de tipo int
+vector <string> x               //x es de vector string
+vector <Bicicleta> misBicis     //vector de clase
+vector <Personas> estudiantes   //vector de clase
+
+
+--------------------------------------------------------------
+Funciones de vector
+=> size : averiguar el numero de elementos guardados
+=> clear : borrar todos los datos
+=> operator[] : acceder al elemento [indice]
+=> insert : para insertar un nuevo dato en una determinada posición
+=> erase : para borrar un dato de una determinada
+=> push_back posición.  para añadir un dato al final.
+=> pop_back para sacar el dato que hay al fina
+--------------------------------------------------------------
+PILAS - STACK
+http://www.cplusplus.com/reference/stack/stack/
+=> Ultimo en entrar, primero en salir
+=> Apilar : Entrar elemento
+=> Desapilar: Sacar elemento
+
+Operaciones Basicas
+=> Push (apilar-insertar)
+=> Pop (desapilar-quitar)
+
+QUE TIENE UNA PILAS
+=> Nodo = {dato, puntero}
+
+Nodo:
+struct Nodo{
+  int dato;
+  Nodo *siguiente;
+};
+
+INSERTAR ELEMENTO EN LA PILA
+1. Crear espacio de memoria para un nodo
+  """
+    pila = NULL;
+    Nodo *nuevo_nodo = new Nodo();
+  """
+2. Cargar  el valor dentro del nodo (dato)
+  """
+    nuevo_nodo -> dato = 10
+  """
+3. Cargar el puntero pila dentro del nodo siguiente
+  """
+    nuevo_nodo -> siguiente = pila
+  """
+4. Asignar el nuevo nodo pila
+  """
+    pila = nuevo_nodo;
+  """
+Funcion:
+    void agregarPila(Nodo *&pila, int n){
+      Nodo *nuevo_nodo = new Nodo();
+      nuevo_nodo -> dato = n,
+      nuevo_nodo -> siguiente = pila;
+      pila = nuevo_nodo;
+    }
+
+--------------------------------------------------------------
+COLAS
+http://www.cplusplus.com/reference/queue/queue/
+Primero en entrar, primero en salir
+
+Acceso
+En el mismo orden en que se insertaron
+
+Metodos
+=> desencolar() : Solo se usa si no esta vacia
+=> primero() : Solo se usa si no esta vacia
+=> encolar() : Colocar un nuevo elemento
+
+QUEDE EN LA 39
+--------------------------------------------------------------
+--------------------------------------------------------------
+--------------------------------------------------------------
+--------------------------------------------------------------
+--------------------------------------------------------------
+--------------------------------------------------------------

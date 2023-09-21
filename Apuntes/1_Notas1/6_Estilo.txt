@@ -1,0 +1,32 @@
+AL COMIENZO DE CADA ARCHIVO
+/*
+Archivo:
+Autor:
+Fecha de creación:
+Fecha de última modificación:
+Licencia: GNU-GPL
+*/
+------------------------------------------------------------------------
+ARCHIVOS .H
+/*
+Clase:
+Responsabilidad:
+Relaciones:
+*/
+------------------------------------------------------------------------
+MAIN
+/**
+Historia: describir el programa
+*/
+-----------------------------------------------------------------------
+Clases => Comienzan por mayuscula
+Variables, Atributos, Funciones y Objetos: Cominezan por minuscula
+Constates => Mayusculas
+------------------------------------------------------------------------
+Metodos => Nombres que no necesiten comentario
+------------------------------------------------------------------------
+Para generar un archivo html de los comentarios:
+/**
+comentario
+*/
+------------------------------------------------------------------------
