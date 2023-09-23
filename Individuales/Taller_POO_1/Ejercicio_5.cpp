@@ -14,6 +14,7 @@ int mayor(int numero1, int numero2)
   {
     cout << numero2 << " es mayor que " << numero1<<endl;
   }
+  return 0;
 }
 
 //Definimos una funcion que nos compruebe si son iguales los numeros
@@ -23,6 +24,7 @@ int iguales(int numero1, int numero2)
   if(numero1==numero2){
     cout<<"Los numero son iguales!!"<<endl;
   }
+  return 0;
 }
 
 //Definimos la funcion principal

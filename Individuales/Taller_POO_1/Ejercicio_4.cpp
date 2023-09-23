@@ -8,7 +8,7 @@ Fecha última modificación: 2023-09-19
 #include<iostream>
 #include<stdlib.h>
 
-using namespace std;
+using namespace std
 //Definimos una funcion para calcular las notas
 float calcular(float nota1,float nota2,float nota3){//nota1=notapractica,nota2=notateorica,nota3=notaparticipacion
 	nota1*=0.3;
