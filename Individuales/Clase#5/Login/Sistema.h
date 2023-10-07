@@ -6,13 +6,14 @@ using namespace std;
 class Sistema
 {
 private:
-  string nameuser;
+  string nombre;
 
 public:
   Sistema();
-  void accesoAdministrador(string nameuser, string password);
+  void accesoAdministrador(string user, string pas);
   void accesoModuloRegistro();
 };
+
 #else
-class Sistemalogin;
+class SistemaLogIn;
 #endif

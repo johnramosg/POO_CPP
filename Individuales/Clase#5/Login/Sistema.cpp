@@ -1,16 +1,15 @@
 #include "Sistema.h"
 #include <iostream>
-#include <string>
 using namespace std;
 
 Sistema::Sistema()
 {
-  nameuser = " ";
+  nombre = " ";
 }
 
-void Sistema::accesoAdministrador(string _nameuser, string pas)
+void Sistema::accesoAdministrador(string user, string pas)
 {
-  if (_nameuser == "admin")
+  if (user == "admin")
   {
     cout << "Usted es administrador y tiene todos los permisos" << endl;
   }

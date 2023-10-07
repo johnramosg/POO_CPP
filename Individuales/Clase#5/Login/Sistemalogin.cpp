@@ -1,34 +1,34 @@
+#include "SistemaLogIn.h"
 #include <iostream>
 #include <string>
-#include "Sistemalogin.h"
 using namespace std;
 
-Sistemalogin::Sistemalogin(string _user, string _password)
+SistemaLogIn::SistemaLogIn(string user, string pas)
 {
-  user = _user;
-  password = _password;
-  session = true;
+  nombre = user;
+  password = pas;
+  sesion = true;
 }
 
-void Sistemalogin::iniciarSesion(string _user, string _password)
+void SistemaLogIn::iniciarSesion(string usuario, string pas)
 {
-  if (user == _user && password == _password)
+  if (nombre == usuario && password == pas)
   {
-    session = true;
-    cout << "Inicio de session Exitoso" << endl;
+    sesion = true;
+    cout << "Inicio de sesión exitoso" << endl;
   }
   else
   {
-    session = false;
-    cout << "Credenciales Incorrectas" << endl;
+    sesion = false;
+    cout << "Credenciales incorrectas" << endl;
   }
 }
 
-void Sistemalogin::cerrarSesion()
+void SistemaLogIn::cerrarSesion()
 {
-  if (session)
+  if (sesion)
   {
-    session = false;
+    sesion = false;
     cout << "Sesión cerrada" << endl;
   }
   else
@@ -36,9 +36,10 @@ void Sistemalogin::cerrarSesion()
     cout << "No has iniciado sesión" << endl;
   }
 }
-void Sistemalogin::funcionesPersonalizadas()
+
+void SistemaLogIn::funcionesPersonalizadas()
 {
-  if (session)
+  if (sesion)
   {
     cout << "Aquí van las funciones personalizadas" << endl;
   }
@@ -47,18 +48,16 @@ void Sistemalogin::funcionesPersonalizadas()
     cout << "No tiene privilegios en el sistema" << endl;
   }
 }
-Sistemalogin::~Sistemalogin()
+
+string SistemaLogIn::getUsuario()
 {
+  return nombre;
 }
-string Sistemalogin::getUser()
-{
-  return user;
-}
-string Sistemalogin::getPassword()
+string SistemaLogIn::getPassword()
 {
   return password;
 }
-bool Sistemalogin::getSession()
+bool SistemaLogIn::getSesion()
 {
-  return session;
+  return sesion;
 }

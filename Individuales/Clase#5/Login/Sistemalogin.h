@@ -1,29 +1,29 @@
-#ifndef SISTEMA_HH
-#define SISTEMA_HH
+#ifndef SISTEMALOGIN_HH
+#define SISTEMALOGIN_HH
 
 #include <string>
-
 using namespace std;
 
-class Sistemalogin
+class SistemaLogIn
 {
 private:
-    string user;
+    string nombre;
     string password;
-    bool session;
+    bool sesion;
 
 public:
-    Sistemalogin(string user, string password);
-    void iniciarSesion(string user, string password);
+    SistemaLogIn(string usuario, string pas);
+    void iniciarSesion(string usuario, string pas);
     void cerrarSesion();
     void funcionesPersonalizadas();
-    void setUser();
-    void setPassword();
-    string getUser();
+    void setUsuario();
+    void setPasword();
+    void setSesion();
+    string getUsuario();
     string getPassword();
-    bool getSession();
-    ~Sistemalogin();
+    bool getSesion();
 };
+
 #else
-class Sistemalogin;
+class SistemaLogIn;
 #endif
