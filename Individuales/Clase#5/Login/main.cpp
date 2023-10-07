@@ -1,10 +1,16 @@
-#include<iostream>
-#include"Sistemalogin.hpp"
+#include <iostream>
+#include "Sistemalogin.h"
+#include "Sistema.h"
+using namespace std;
 
-int main(){
-  Sistemalogin usuario("salome","123");
+int main()
+{
+  Sistemalogin usuario("salome", "123");
+  Sistema biblioteca;
 
-  usuario.iniciarsesion("salome","123");
-
-  return 0;
+  usuario.iniciarSesion("saome", "123");
+  usuario.cerrarSesion();
+  usuario.funcionesPersonalizadas();
+  biblioteca.accesoAdministrador(usuario.getUser(), usuario.getPassword());
+  usuario.cerrarSesion();
 }

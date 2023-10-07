@@ -1,5 +1,5 @@
-#ifndef SISTEMA_HPP
-#define SISTEMA_HPP
+#ifndef SISTEMA_HH
+#define SISTEMA_HH
 
 #include <string>
 
@@ -14,13 +14,16 @@ private:
 
 public:
     Sistemalogin(string user, string password);
-    void iniciarsesion(string user, string password);
-    void cerrarsesion();
-    void funcionespersonalizadas();
-    void setName();
+    void iniciarSesion(string user, string password);
+    void cerrarSesion();
+    void funcionesPersonalizadas();
+    void setUser();
     void setPassword();
-    string getName();
+    string getUser();
     string getPassword();
+    bool getSession();
     ~Sistemalogin();
 };
+#else
+class Sistemalogin;
 #endif

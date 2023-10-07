@@ -1,12 +1,16 @@
-#include<iostream>
-#include<string>
-#include"Sistemalogin.hpp"
+#include <iostream>
+#include <string>
+#include "Sistemalogin.h"
+using namespace std;
 
-Sistemalogin::Sistemalogin(string _user,string _password){
-  user=_user;
-  password=_password;
+Sistemalogin::Sistemalogin(string _user, string _password)
+{
+  user = _user;
+  password = _password;
+  session = true;
 }
-void Sistemalogin::iniciarsesion(string _user, string _password)
+
+void Sistemalogin::iniciarSesion(string _user, string _password)
 {
   if (user == _user && password == _password)
   {
@@ -20,6 +24,41 @@ void Sistemalogin::iniciarsesion(string _user, string _password)
   }
 }
 
-Sistemalogin::~Sistemalogin(){
-
+void Sistemalogin::cerrarSesion()
+{
+  if (session)
+  {
+    session = false;
+    cout << "Sesión cerrada" << endl;
+  }
+  else
+  {
+    cout << "No has iniciado sesión" << endl;
+  }
+}
+void Sistemalogin::funcionesPersonalizadas()
+{
+  if (session)
+  {
+    cout << "Aquí van las funciones personalizadas" << endl;
+  }
+  else
+  {
+    cout << "No tiene privilegios en el sistema" << endl;
+  }
+}
+Sistemalogin::~Sistemalogin()
+{
+}
+string Sistemalogin::getUser()
+{
+  return user;
+}
+string Sistemalogin::getPassword()
+{
+  return password;
+}
+bool Sistemalogin::getSession()
+{
+  return session;
 }
