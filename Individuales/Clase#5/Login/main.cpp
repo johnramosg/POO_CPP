@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
   Sistemalogin usuario("salome", "123");
-  Sistema biblioteca;
+  Sistema biblioteca("admin", "123");
 
   usuario.iniciarSesion("saome", "123");
   usuario.cerrarSesion();
